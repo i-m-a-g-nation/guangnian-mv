@@ -1,8 +1,0 @@
-用途：S37 相拥镜头的运动参考（animatic）
-建议模型：Sora / Veo / Runway / Kling
-
-──────────────── PROMPT ────────────────
-4s cinematic animatic, two weightless figures slowly embracing at the center of a collapsing starfield,
-shattered transparent crystals and golden dust orbit them, cyan scanlines wash into warm gold, watercolor
-hand-painted style, 16:9, no text
-─────────────────────────────────────

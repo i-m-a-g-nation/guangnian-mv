@@ -1,9 +1,0 @@
-用途：副歌环绕镜头的运动参考（animatic，不直接当最终帧）
-建议模型：Sora / Veo / Runway / Kling
-使用方式：整段贴入，生成 2–3 条不同运镜，选运动/光最好的一条交给 OpenCode 复刻
-
-──────────────── PROMPT ────────────────
-5s cinematic animatic, slow orbit around a silhouetted astronaut standing before a huge window, the window
-bursts into a golden supernova and magenta nebula storm, watercolor hand-painted look with paper grain,
-16:9, no text, no cuts
-─────────────────────────────────────
