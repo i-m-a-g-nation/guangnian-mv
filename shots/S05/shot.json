@@ -3,7 +3,7 @@
   "id": "S05",
   "name": "蓝星入暗面与舷窗霜层",
   "kind": "T1",
-  "assetStatus": "TODO",
+  "assetStatus": "READY_FLAT_PREVIEW",
   "design": {
     "intendedLayers": [
       "planet",
@@ -17,92 +17,33 @@
     "from": {
       "x": 0,
       "y": 0,
-      "scale": 1.04,
+      "scale": 1.025,
       "rotationDeg": 0
     },
     "to": {
-      "x": 0,
-      "y": 0,
-      "scale": 1.045,
+      "x": -8,
+      "y": 2,
+      "scale": 1.055,
       "rotationDeg": 0
     },
     "ease": "smootherstep"
   },
   "layers": [
     {
-      "id": "plate",
-      "src": "assets/shots/S05/plate.png",
+      "id": "flat-s05-hero",
+      "src": "shots/S05/hero.png",
       "required": true,
       "fit": "cover",
       "opacity": 1,
       "blend": "source-over",
       "parallax": 1
-    },
-    {
-      "id": "planet",
-      "src": "assets/shots/S05/layers/planet.png",
-      "required": false,
-      "fit": "cover",
-      "opacity": 1,
-      "blend": "source-over",
-      "parallax": 0.5,
-      "motion": {
-        "from": {
-          "x": 15,
-          "y": 0
-        },
-        "to": {
-          "x": -5,
-          "y": 0
-        },
-        "ease": "smootherstep"
-      }
-    },
-    {
-      "id": "frost",
-      "src": "assets/shots/S05/layers/frost.png",
-      "required": false,
-      "fit": "cover",
-      "opacity": 1,
-      "blend": "source-over",
-      "parallax": 0.5,
-      "reveal": {
-        "type": "radial-in",
-        "from": 0.15,
-        "to": 0.95,
-        "center": [
-          960,
-          560
-        ]
-      }
-    },
-    {
-      "id": "window_frame",
-      "src": "assets/shots/S05/layers/window_frame.png",
-      "required": false,
-      "fit": "cover",
-      "opacity": 1,
-      "blend": "source-over",
-      "parallax": 0.5
     }
   ],
-  "fx": [
-    {
-      "type": "radialGlow",
-      "center": [
-        1210,
-        280
-      ],
-      "radius": 190,
-      "color": "#7FD8D8",
-      "opacity": 0.1,
-      "pulse": 0.15
-    }
-  ],
+  "fx": [],
   "subtitle": {
     "safeYMin": 975,
     "safeYMax": 1070,
     "renderInsideShot": false
   },
-  "notes": "hero.png 是完整构图参照；plate.png 必须填补从 hero 中抠出的主体留下的区域。不可把原始完整 hero 直接叠在移动主体下方，否则会出现鬼影。"
+  "notes": "第一版单层水彩原画保真预览。使用用户刚上传的 shots/S05/hero.png 做缓慢推镜。尚未拆层，星球、霜花、窗框不会独立运动；之后通过背景补洞与透明主体分层升级。"
 }
