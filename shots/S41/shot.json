@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "S41",
+  "name": "两颗相依的光体",
+  "kind": "T1+T2",
+  "assetStatus": "TODO",
+  "design": {
+    "intendedLayers": [
+      "light_orb_a",
+      "light_orb_b"
+    ],
+    "motionPreset": "pull-out",
+    "transitionOut": "dissolve"
+  },
+  "camera": {
+    "from": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.1,
+      "rotationDeg": 0
+    },
+    "to": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.025,
+      "rotationDeg": 0
+    },
+    "ease": "smootherstep"
+  },
+  "layers": [
+    {
+      "id": "plate",
+      "src": "assets/shots/S41/plate.png",
+      "required": true,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1
+    },
+    {
+      "id": "light_orb_a",
+      "src": "assets/shots/S41/layers/light_orb_a.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    },
+    {
+      "id": "light_orb_b",
+      "src": "assets/shots/S41/layers/light_orb_b.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    }
+  ],
+  "fx": [],
+  "subtitle": {
+    "safeYMin": 975,
+    "safeYMax": 1070,
+    "renderInsideShot": false
+  },
+  "notes": "hero.png 是完整构图参照；plate.png 必须填补从 hero 中抠出的主体留下的区域。不可把原始完整 hero 直接叠在移动主体下方，否则会出现鬼影。"
+}

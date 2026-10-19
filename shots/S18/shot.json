@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "S18",
+  "name": "世界旋转人物直立",
+  "kind": "T4",
+  "assetStatus": "TODO",
+  "design": {
+    "intendedLayers": [
+      "rotating_cabin",
+      "pilot",
+      "gold_ring"
+    ],
+    "motionPreset": "hold",
+    "transitionOut": "match-cut"
+  },
+  "camera": {
+    "from": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.04,
+      "rotationDeg": 0
+    },
+    "to": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.045,
+      "rotationDeg": 0
+    },
+    "ease": "smootherstep"
+  },
+  "layers": [
+    {
+      "id": "plate",
+      "src": "assets/shots/S18/plate.png",
+      "required": true,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1
+    },
+    {
+      "id": "rotating_cabin",
+      "src": "assets/shots/S18/layers/rotating_cabin.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5,
+      "motion": {
+        "from": {
+          "rotationDeg": 0
+        },
+        "to": {
+          "rotationDeg": 18
+        },
+        "ease": "smootherstep"
+      }
+    },
+    {
+      "id": "pilot",
+      "src": "assets/shots/S18/layers/pilot.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1.0
+    },
+    {
+      "id": "gold_ring",
+      "src": "assets/shots/S18/layers/gold_ring.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    }
+  ],
+  "fx": [],
+  "subtitle": {
+    "safeYMin": 975,
+    "safeYMax": 1070,
+    "renderInsideShot": false
+  },
+  "notes": "hero.png 是完整构图参照；plate.png 必须填补从 hero 中抠出的主体留下的区域。不可把原始完整 hero 直接叠在移动主体下方，否则会出现鬼影。"
+}

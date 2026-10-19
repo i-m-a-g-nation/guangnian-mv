@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "S39",
+  "name": "收束的银河光柱与微小人物",
+  "kind": "T1",
+  "assetStatus": "TODO",
+  "design": {
+    "intendedLayers": [
+      "galaxy",
+      "light_column",
+      "two_figures"
+    ],
+    "motionPreset": "pull-out",
+    "transitionOut": "match-cut"
+  },
+  "camera": {
+    "from": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.1,
+      "rotationDeg": 0
+    },
+    "to": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.025,
+      "rotationDeg": 0
+    },
+    "ease": "smootherstep"
+  },
+  "layers": [
+    {
+      "id": "plate",
+      "src": "assets/shots/S39/plate.png",
+      "required": true,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1
+    },
+    {
+      "id": "galaxy",
+      "src": "assets/shots/S39/layers/galaxy.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    },
+    {
+      "id": "light_column",
+      "src": "assets/shots/S39/layers/light_column.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    },
+    {
+      "id": "two_figures",
+      "src": "assets/shots/S39/layers/two_figures.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    }
+  ],
+  "fx": [],
+  "subtitle": {
+    "safeYMin": 975,
+    "safeYMax": 1070,
+    "renderInsideShot": false
+  },
+  "notes": "hero.png 是完整构图参照；plate.png 必须填补从 hero 中抠出的主体留下的区域。不可把原始完整 hero 直接叠在移动主体下方，否则会出现鬼影。"
+}

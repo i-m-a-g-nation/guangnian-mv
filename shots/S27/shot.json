@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "S27",
+  "name": "最后一帧对位不接触",
+  "kind": "T3",
+  "assetStatus": "TODO",
+  "design": {
+    "intendedLayers": [
+      "left_hand",
+      "right_hand",
+      "barrier"
+    ],
+    "motionPreset": "hold",
+    "transitionOut": "flash"
+  },
+  "camera": {
+    "from": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.04,
+      "rotationDeg": 0
+    },
+    "to": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.045,
+      "rotationDeg": 0
+    },
+    "ease": "smootherstep"
+  },
+  "layers": [
+    {
+      "id": "plate",
+      "src": "assets/shots/S27/plate.png",
+      "required": true,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1
+    },
+    {
+      "id": "left_hand",
+      "src": "assets/shots/S27/layers/left_hand.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1.0
+    },
+    {
+      "id": "right_hand",
+      "src": "assets/shots/S27/layers/right_hand.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1.0
+    },
+    {
+      "id": "barrier",
+      "src": "assets/shots/S27/layers/barrier.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    }
+  ],
+  "fx": [],
+  "subtitle": {
+    "safeYMin": 975,
+    "safeYMax": 1070,
+    "renderInsideShot": false
+  },
+  "notes": "hero.png 是完整构图参照；plate.png 必须填补从 hero 中抠出的主体留下的区域。不可把原始完整 hero 直接叠在移动主体下方，否则会出现鬼影。"
+}

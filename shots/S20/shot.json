@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "S20",
+  "name": "冷舱被金光染亮",
+  "kind": "T2",
+  "assetStatus": "TODO",
+  "design": {
+    "intendedLayers": [
+      "cold_plate",
+      "warm_wash"
+    ],
+    "motionPreset": "hold",
+    "transitionOut": "color-wipe"
+  },
+  "camera": {
+    "from": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.04,
+      "rotationDeg": 0
+    },
+    "to": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.045,
+      "rotationDeg": 0
+    },
+    "ease": "smootherstep"
+  },
+  "layers": [
+    {
+      "id": "plate",
+      "src": "assets/shots/S20/plate.png",
+      "required": true,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1
+    },
+    {
+      "id": "cold_plate",
+      "src": "assets/shots/S20/layers/cold_plate.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    },
+    {
+      "id": "warm_wash",
+      "src": "assets/shots/S20/layers/warm_wash.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5,
+      "opacityKeys": [
+        {
+          "t": 0,
+          "value": 0
+        },
+        {
+          "t": 0.2,
+          "value": 0
+        },
+        {
+          "t": 0.9,
+          "value": 1
+        },
+        {
+          "t": 1,
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "fx": [],
+  "subtitle": {
+    "safeYMin": 975,
+    "safeYMax": 1070,
+    "renderInsideShot": false
+  },
+  "notes": "hero.png 是完整构图参照；plate.png 必须填补从 hero 中抠出的主体留下的区域。不可把原始完整 hero 直接叠在移动主体下方，否则会出现鬼影。"
+}

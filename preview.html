@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>光年之外 · 动态插画预览</title><style>
+body{background:#0b1524;color:#e7edf5;font:16px system-ui,'Microsoft YaHei',sans-serif;max-width:1200px;margin:24px auto;padding:0 20px}canvas{display:block;width:100%;height:auto;background:#0a1422;border:1px solid #354759;border-radius:12px}h1{font-size:23px}header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}p,small{color:#b9c7d4}select,input,button{background:#1c3045;color:#e7edf5;border:1px solid #456178;padding:10px;border-radius:7px}button{cursor:pointer}.controls{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:15px}input[type=range]{flex:1;min-width:200px}.status{min-height:40px;font-size:13px;white-space:pre-wrap}
+</style></head><body><header><h1>光年之外 · 1920×1080 保真合成预览</h1><small>仅用于动画调试；正式导出无 UI</small></header>
+<canvas id="mv" width="1920" height="1080"></canvas>
+<div class="controls"><label>镜头 <select id="shot"><option value="DEMO">DEMO — 上传水彩原画慢推</option></select></label><button id="play">播放</button><input id="frame" type="range" min="0" max="119" value="0"><output id="time">0.000 s</output></div>
+<p id="status" class="status"></p><small>DEMO 仅为整张原画慢推，不能等同于完成拆层；正式镜头需要先制作 plate.png 和透明图层。所有镜头按原始绝对时间存储，最终按全局帧号渲染。</small>
+<script type="module" src="/src/engine.js"></script><script type="module" src="/src/preview-ui.js"></script></body></html>

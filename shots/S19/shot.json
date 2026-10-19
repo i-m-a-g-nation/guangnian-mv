@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "S19",
+  "name": "掌心握住怀表光环",
+  "kind": "T2",
+  "assetStatus": "TODO",
+  "design": {
+    "intendedLayers": [
+      "hand_open",
+      "hand_closed",
+      "gold_ring"
+    ],
+    "motionPreset": "hand-push",
+    "transitionOut": "glow-wipe"
+  },
+  "camera": {
+    "from": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.04,
+      "rotationDeg": 0
+    },
+    "to": {
+      "x": -4,
+      "y": 2,
+      "scale": 1.075,
+      "rotationDeg": 0
+    },
+    "ease": "smootherstep"
+  },
+  "layers": [
+    {
+      "id": "plate",
+      "src": "assets/shots/S19/plate.png",
+      "required": true,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1
+    },
+    {
+      "id": "hand_open",
+      "src": "assets/shots/S19/layers/hand_open.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1.0,
+      "opacityKeys": [
+        {
+          "t": 0,
+          "value": 1
+        },
+        {
+          "t": 0.4,
+          "value": 1
+        },
+        {
+          "t": 0.65,
+          "value": 0
+        },
+        {
+          "t": 1,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "hand_closed",
+      "src": "assets/shots/S19/layers/hand_closed.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1.0,
+      "opacityKeys": [
+        {
+          "t": 0,
+          "value": 0
+        },
+        {
+          "t": 0.4,
+          "value": 0
+        },
+        {
+          "t": 0.65,
+          "value": 1
+        },
+        {
+          "t": 1,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "gold_ring",
+      "src": "assets/shots/S19/layers/gold_ring.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    }
+  ],
+  "fx": [],
+  "subtitle": {
+    "safeYMin": 975,
+    "safeYMax": 1070,
+    "renderInsideShot": false
+  },
+  "notes": "hero.png 是完整构图参照；plate.png 必须填补从 hero 中抠出的主体留下的区域。不可把原始完整 hero 直接叠在移动主体下方，否则会出现鬼影。"
+}

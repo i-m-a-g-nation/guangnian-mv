@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "S36",
+  "name": "金紫星轨组成银河光柱",
+  "kind": "T4",
+  "assetStatus": "TODO",
+  "design": {
+    "intendedLayers": [
+      "two_figures",
+      "gold_orbit",
+      "purple_orbit",
+      "light_column"
+    ],
+    "motionPreset": "pull-out",
+    "transitionOut": "match-cut"
+  },
+  "camera": {
+    "from": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.1,
+      "rotationDeg": 0
+    },
+    "to": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.025,
+      "rotationDeg": 0
+    },
+    "ease": "smootherstep"
+  },
+  "layers": [
+    {
+      "id": "plate",
+      "src": "assets/shots/S36/plate.png",
+      "required": true,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1
+    },
+    {
+      "id": "two_figures",
+      "src": "assets/shots/S36/layers/two_figures.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    },
+    {
+      "id": "gold_orbit",
+      "src": "assets/shots/S36/layers/gold_orbit.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    },
+    {
+      "id": "purple_orbit",
+      "src": "assets/shots/S36/layers/purple_orbit.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    },
+    {
+      "id": "light_column",
+      "src": "assets/shots/S36/layers/light_column.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    }
+  ],
+  "fx": [],
+  "subtitle": {
+    "safeYMin": 975,
+    "safeYMax": 1070,
+    "renderInsideShot": false
+  },
+  "notes": "hero.png 是完整构图参照；plate.png 必须填补从 hero 中抠出的主体留下的区域。不可把原始完整 hero 直接叠在移动主体下方，否则会出现鬼影。"
+}

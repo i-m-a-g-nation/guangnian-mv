@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "id": "S25",
+  "name": "光幕两侧的指尖",
+  "kind": "T3+T5",
+  "assetStatus": "TODO",
+  "design": {
+    "intendedLayers": [
+      "left_hand",
+      "right_hand",
+      "light_membrane",
+      "ripples"
+    ],
+    "motionPreset": "slow-push",
+    "transitionOut": "match-cut"
+  },
+  "camera": {
+    "from": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.025,
+      "rotationDeg": 0
+    },
+    "to": {
+      "x": -10,
+      "y": 3,
+      "scale": 1.055,
+      "rotationDeg": 0
+    },
+    "ease": "smootherstep"
+  },
+  "layers": [
+    {
+      "id": "plate",
+      "src": "assets/shots/S25/plate.png",
+      "required": true,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1
+    },
+    {
+      "id": "left_hand",
+      "src": "assets/shots/S25/layers/left_hand.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1.0,
+      "motion": {
+        "from": {
+          "x": -20
+        },
+        "to": {
+          "x": 0
+        },
+        "ease": "smootherstep"
+      }
+    },
+    {
+      "id": "right_hand",
+      "src": "assets/shots/S25/layers/right_hand.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1.0,
+      "motion": {
+        "from": {
+          "x": 20
+        },
+        "to": {
+          "x": 0
+        },
+        "ease": "smootherstep"
+      }
+    },
+    {
+      "id": "light_membrane",
+      "src": "assets/shots/S25/layers/light_membrane.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    },
+    {
+      "id": "ripples",
+      "src": "assets/shots/S25/layers/ripples.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    }
+  ],
+  "fx": [
+    {
+      "type": "radialGlow",
+      "center": [
+        960,
+        495
+      ],
+      "radius": 100,
+      "color": "#7FD8D8",
+      "opacity": 0.07,
+      "pulse": 0.15
+    }
+  ],
+  "subtitle": {
+    "safeYMin": 975,
+    "safeYMax": 1070,
+    "renderInsideShot": false
+  },
+  "notes": "hero.png 是完整构图参照；plate.png 必须填补从 hero 中抠出的主体留下的区域。不可把原始完整 hero 直接叠在移动主体下方，否则会出现鬼影。"
+}

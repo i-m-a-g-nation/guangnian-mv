@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "DEMO",
+  "name": "上传水彩宇航员原画 · 保真慢推测试",
+  "kind": "T1",
+  "assetStatus": "DEMO_FLAT_ORIGINAL",
+  "camera": {
+    "from": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.035,
+      "rotationDeg": 0
+    },
+    "to": {
+      "x": -18,
+      "y": 6,
+      "scale": 1.075,
+      "rotationDeg": 0
+    },
+    "ease": "smootherstep"
+  },
+  "layers": [
+    {
+      "id": "original-painting",
+      "src": "assets/reference/astronaut_reference.png",
+      "required": true,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1
+    }
+  ],
+  "fx": [
+    {
+      "type": "radialGlow",
+      "center": [
+        1290,
+        172
+      ],
+      "radius": 100,
+      "color": "#E8A33D",
+      "opacity": 0.16,
+      "pulse": 0.2
+    },
+    {
+      "type": "radialGlow",
+      "center": [
+        1680,
+        405
+      ],
+      "radius": 200,
+      "color": "#7FD8D8",
+      "opacity": 0.07,
+      "pulse": 0.22
+    }
+  ],
+  "subtitle": {
+    "safeYMin": 975,
+    "safeYMax": 1070,
+    "renderInsideShot": false
+  },
+  "notes": "演示只对整幅原画做轻推镜和光影脉动，不会自动完成主体拆层，也不属于 S05 正式原画。"
+}

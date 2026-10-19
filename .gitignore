@@ -4,3 +4,11 @@ out/
 *.m4a
 *.mp4
 *.wav
+
+# --- dynamic illustration MV engine (merged) ---
+output/
+__pycache__/
+*.pyc
+.DS_Store
+assets/audio/*
+!assets/audio/.gitkeep

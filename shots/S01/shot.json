@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "S01",
+  "name": "飞船与舷窗建立",
+  "kind": "T1",
+  "assetStatus": "TODO",
+  "design": {
+    "intendedLayers": [
+      "circle-window"
+    ],
+    "motionPreset": "push-in",
+    "transitionOut": "portal"
+  },
+  "camera": {
+    "from": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.018,
+      "rotationDeg": 0
+    },
+    "to": {
+      "x": -24,
+      "y": 6,
+      "scale": 1.09,
+      "rotationDeg": 0
+    },
+    "ease": "smootherstep"
+  },
+  "layers": [
+    {
+      "id": "plate",
+      "src": "assets/shots/S01/plate.png",
+      "required": true,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1
+    },
+    {
+      "id": "circle-window",
+      "src": "assets/shots/S01/layers/circle-window.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    }
+  ],
+  "fx": [],
+  "subtitle": {
+    "safeYMin": 975,
+    "safeYMax": 1070,
+    "renderInsideShot": false
+  },
+  "notes": "hero.png 是完整构图参照；plate.png 必须填补从 hero 中抠出的主体留下的区域。不可把原始完整 hero 直接叠在移动主体下方，否则会出现鬼影。"
+}

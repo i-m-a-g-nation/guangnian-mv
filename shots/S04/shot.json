@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "S04",
+  "name": "睁眼与蓝星倒影",
+  "kind": "T2",
+  "assetStatus": "TODO",
+  "design": {
+    "intendedLayers": [
+      "eye_closed",
+      "eye_open",
+      "reflection"
+    ],
+    "motionPreset": "eye-push",
+    "transitionOut": "match-cut"
+  },
+  "camera": {
+    "from": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.06,
+      "rotationDeg": 0
+    },
+    "to": {
+      "x": -6,
+      "y": 2,
+      "scale": 1.11,
+      "rotationDeg": 0
+    },
+    "ease": "smootherstep"
+  },
+  "layers": [
+    {
+      "id": "plate",
+      "src": "assets/shots/S04/plate.png",
+      "required": true,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1
+    },
+    {
+      "id": "eye_closed",
+      "src": "assets/shots/S04/layers/eye_closed.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5,
+      "opacityKeys": [
+        {
+          "t": 0,
+          "value": 1
+        },
+        {
+          "t": 0.25,
+          "value": 1
+        },
+        {
+          "t": 0.4,
+          "value": 0
+        },
+        {
+          "t": 1,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "eye_open",
+      "src": "assets/shots/S04/layers/eye_open.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5,
+      "opacityKeys": [
+        {
+          "t": 0,
+          "value": 0
+        },
+        {
+          "t": 0.25,
+          "value": 0
+        },
+        {
+          "t": 0.4,
+          "value": 1
+        },
+        {
+          "t": 1,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "reflection",
+      "src": "assets/shots/S04/layers/reflection.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    }
+  ],
+  "fx": [],
+  "subtitle": {
+    "safeYMin": 975,
+    "safeYMax": 1070,
+    "renderInsideShot": false
+  },
+  "notes": "hero.png 是完整构图参照；plate.png 必须填补从 hero 中抠出的主体留下的区域。不可把原始完整 hero 直接叠在移动主体下方，否则会出现鬼影。"
+}

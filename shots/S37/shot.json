@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "id": "S37",
+  "name": "两个身影第一次真正相拥",
+  "kind": "T5",
+  "assetStatus": "TODO",
+  "design": {
+    "intendedLayers": [
+      "pose_apart",
+      "pose_near",
+      "pose_touch",
+      "pose_embrace",
+      "crystals"
+    ],
+    "motionPreset": "slow-push",
+    "transitionOut": "eye-match-cut"
+  },
+  "camera": {
+    "from": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.025,
+      "rotationDeg": 0
+    },
+    "to": {
+      "x": -10,
+      "y": 3,
+      "scale": 1.055,
+      "rotationDeg": 0
+    },
+    "ease": "smootherstep"
+  },
+  "layers": [
+    {
+      "id": "plate",
+      "src": "assets/shots/S37/plate.png",
+      "required": true,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1
+    },
+    {
+      "id": "pose_apart",
+      "src": "assets/shots/S37/layers/pose_apart.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5,
+      "opacityKeys": [
+        {
+          "t": 0,
+          "value": 1
+        },
+        {
+          "t": 0.17,
+          "value": 1
+        },
+        {
+          "t": 0.32,
+          "value": 0
+        },
+        {
+          "t": 1,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "pose_near",
+      "src": "assets/shots/S37/layers/pose_near.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5,
+      "opacityKeys": [
+        {
+          "t": 0,
+          "value": 0
+        },
+        {
+          "t": 0.17,
+          "value": 0
+        },
+        {
+          "t": 0.32,
+          "value": 1
+        },
+        {
+          "t": 0.49,
+          "value": 1
+        },
+        {
+          "t": 0.59,
+          "value": 0
+        },
+        {
+          "t": 1,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "pose_touch",
+      "src": "assets/shots/S37/layers/pose_touch.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5,
+      "opacityKeys": [
+        {
+          "t": 0,
+          "value": 0
+        },
+        {
+          "t": 0.49,
+          "value": 0
+        },
+        {
+          "t": 0.59,
+          "value": 1
+        },
+        {
+          "t": 0.7,
+          "value": 1
+        },
+        {
+          "t": 0.82,
+          "value": 0
+        },
+        {
+          "t": 1,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "pose_embrace",
+      "src": "assets/shots/S37/layers/pose_embrace.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5,
+      "opacityKeys": [
+        {
+          "t": 0,
+          "value": 0
+        },
+        {
+          "t": 0.7,
+          "value": 0
+        },
+        {
+          "t": 0.82,
+          "value": 1
+        },
+        {
+          "t": 1,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "crystals",
+      "src": "assets/shots/S37/layers/crystals.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    }
+  ],
+  "fx": [],
+  "subtitle": {
+    "safeYMin": 975,
+    "safeYMax": 1070,
+    "renderInsideShot": false
+  },
+  "notes": "hero.png 是完整构图参照；plate.png 必须填补从 hero 中抠出的主体留下的区域。不可把原始完整 hero 直接叠在移动主体下方，否则会出现鬼影。"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "guangnian-dynamic-illustration",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "preview": "node scripts/server.mjs",
+    "validate": "node scripts/validate.mjs",
+    "render:demo": "node scripts/render.mjs --shot DEMO --count 48",
+    "render": "node scripts/render.mjs"
+  }
+}

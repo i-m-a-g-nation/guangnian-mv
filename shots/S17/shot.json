@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "S17",
+  "name": "无法触碰的幻影拥抱",
+  "kind": "T3",
+  "assetStatus": "TODO",
+  "design": {
+    "intendedLayers": [
+      "pilot",
+      "hologram_arm_front",
+      "hologram_arm_back"
+    ],
+    "motionPreset": "slow-push",
+    "transitionOut": "pull-out"
+  },
+  "camera": {
+    "from": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.025,
+      "rotationDeg": 0
+    },
+    "to": {
+      "x": -10,
+      "y": 3,
+      "scale": 1.055,
+      "rotationDeg": 0
+    },
+    "ease": "smootherstep"
+  },
+  "layers": [
+    {
+      "id": "plate",
+      "src": "assets/shots/S17/plate.png",
+      "required": true,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1
+    },
+    {
+      "id": "pilot",
+      "src": "assets/shots/S17/layers/pilot.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1.0
+    },
+    {
+      "id": "hologram_arm_front",
+      "src": "assets/shots/S17/layers/hologram_arm_front.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    },
+    {
+      "id": "hologram_arm_back",
+      "src": "assets/shots/S17/layers/hologram_arm_back.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    }
+  ],
+  "fx": [],
+  "subtitle": {
+    "safeYMin": 975,
+    "safeYMax": 1070,
+    "renderInsideShot": false
+  },
+  "notes": "hero.png 是完整构图参照；plate.png 必须填补从 hero 中抠出的主体留下的区域。不可把原始完整 hero 直接叠在移动主体下方，否则会出现鬼影。"
+}

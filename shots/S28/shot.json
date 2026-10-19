@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "id": "S28",
+  "name": "失衡船舱向核心攀行",
+  "kind": "T5",
+  "assetStatus": "TODO",
+  "design": {
+    "intendedLayers": [
+      "tilted_cabin",
+      "pilot_pose_a",
+      "pilot_pose_b",
+      "core"
+    ],
+    "motionPreset": "tilt",
+    "transitionOut": "action-cut"
+  },
+  "camera": {
+    "from": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.065,
+      "rotationDeg": -0.7
+    },
+    "to": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.06,
+      "rotationDeg": 1.2
+    },
+    "ease": "smootherstep"
+  },
+  "layers": [
+    {
+      "id": "plate",
+      "src": "assets/shots/S28/plate.png",
+      "required": true,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1
+    },
+    {
+      "id": "tilted_cabin",
+      "src": "assets/shots/S28/layers/tilted_cabin.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    },
+    {
+      "id": "pilot_pose_a",
+      "src": "assets/shots/S28/layers/pilot_pose_a.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1.0,
+      "opacityKeys": [
+        {
+          "t": 0,
+          "value": 1
+        },
+        {
+          "t": 0.45,
+          "value": 1
+        },
+        {
+          "t": 0.7,
+          "value": 0
+        },
+        {
+          "t": 1,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "pilot_pose_b",
+      "src": "assets/shots/S28/layers/pilot_pose_b.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1.0,
+      "opacityKeys": [
+        {
+          "t": 0,
+          "value": 0
+        },
+        {
+          "t": 0.45,
+          "value": 0
+        },
+        {
+          "t": 0.7,
+          "value": 1
+        },
+        {
+          "t": 1,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "core",
+      "src": "assets/shots/S28/layers/core.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    }
+  ],
+  "fx": [],
+  "subtitle": {
+    "safeYMin": 975,
+    "safeYMax": 1070,
+    "renderInsideShot": false
+  },
+  "notes": "hero.png 是完整构图参照；plate.png 必须填补从 hero 中抠出的主体留下的区域。不可把原始完整 hero 直接叠在移动主体下方，否则会出现鬼影。"
+}

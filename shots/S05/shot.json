@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "S05",
+  "name": "蓝星入暗面与舷窗霜层",
+  "kind": "T1",
+  "assetStatus": "TODO",
+  "design": {
+    "intendedLayers": [
+      "planet",
+      "frost",
+      "window_frame"
+    ],
+    "motionPreset": "hold",
+    "transitionOut": "iris"
+  },
+  "camera": {
+    "from": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.04,
+      "rotationDeg": 0
+    },
+    "to": {
+      "x": 0,
+      "y": 0,
+      "scale": 1.045,
+      "rotationDeg": 0
+    },
+    "ease": "smootherstep"
+  },
+  "layers": [
+    {
+      "id": "plate",
+      "src": "assets/shots/S05/plate.png",
+      "required": true,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 1
+    },
+    {
+      "id": "planet",
+      "src": "assets/shots/S05/layers/planet.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5,
+      "motion": {
+        "from": {
+          "x": 15,
+          "y": 0
+        },
+        "to": {
+          "x": -5,
+          "y": 0
+        },
+        "ease": "smootherstep"
+      }
+    },
+    {
+      "id": "frost",
+      "src": "assets/shots/S05/layers/frost.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5,
+      "reveal": {
+        "type": "radial-in",
+        "from": 0.15,
+        "to": 0.95,
+        "center": [
+          960,
+          560
+        ]
+      }
+    },
+    {
+      "id": "window_frame",
+      "src": "assets/shots/S05/layers/window_frame.png",
+      "required": false,
+      "fit": "cover",
+      "opacity": 1,
+      "blend": "source-over",
+      "parallax": 0.5
+    }
+  ],
+  "fx": [
+    {
+      "type": "radialGlow",
+      "center": [
+        1210,
+        280
+      ],
+      "radius": 190,
+      "color": "#7FD8D8",
+      "opacity": 0.1,
+      "pulse": 0.15
+    }
+  ],
+  "subtitle": {
+    "safeYMin": 975,
+    "safeYMax": 1070,
+    "renderInsideShot": false
+  },
+  "notes": "hero.png 是完整构图参照；plate.png 必须填补从 hero 中抠出的主体留下的区域。不可把原始完整 hero 直接叠在移动主体下方，否则会出现鬼影。"
+}

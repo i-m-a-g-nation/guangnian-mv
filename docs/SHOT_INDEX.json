@@ -1,0 +1,723 @@
+[
+  {
+    "id": "S01",
+    "chapter": "C01",
+    "title": "飞船与舷窗建立",
+    "startSec": 0,
+    "endSec": 7.755,
+    "startFrame": 0,
+    "endFrame": 186,
+    "type": "T1",
+    "layerNames": [
+      "circle-window"
+    ],
+    "preset": "push-in",
+    "transition": "portal"
+  },
+  {
+    "id": "S02",
+    "chapter": "C01",
+    "title": "发端的幻影触碰",
+    "startSec": 7.755,
+    "endSec": 11.835,
+    "startFrame": 186,
+    "endFrame": 284,
+    "type": "T3",
+    "layerNames": [
+      "hair",
+      "hologram_hand",
+      "touch_sparks"
+    ],
+    "preset": "slow-push",
+    "transition": "particles"
+  },
+  {
+    "id": "S03",
+    "chapter": "C01",
+    "title": "星尘与怀表停止",
+    "startSec": 11.835,
+    "endSec": 18.665,
+    "startFrame": 284,
+    "endFrame": 448,
+    "type": "T2+T4",
+    "layerNames": [
+      "particles",
+      "watch_ring"
+    ],
+    "preset": "hold",
+    "transition": "freeze"
+  },
+  {
+    "id": "S04",
+    "chapter": "C01",
+    "title": "睁眼与蓝星倒影",
+    "startSec": 18.665,
+    "endSec": 22.745,
+    "startFrame": 448,
+    "endFrame": 546,
+    "type": "T2",
+    "layerNames": [
+      "eye_closed",
+      "eye_open",
+      "reflection"
+    ],
+    "preset": "eye-push",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S05",
+    "chapter": "C01",
+    "title": "蓝星入暗面与舷窗霜层",
+    "startSec": 22.745,
+    "endSec": 27.397,
+    "startFrame": 546,
+    "endFrame": 658,
+    "type": "T1",
+    "layerNames": [
+      "planet",
+      "frost",
+      "window_frame"
+    ],
+    "preset": "hold",
+    "transition": "iris"
+  },
+  {
+    "id": "S06",
+    "chapter": "C02",
+    "title": "全息星图前的微小身影",
+    "startSec": 27.397,
+    "endSec": 31.795,
+    "startFrame": 658,
+    "endFrame": 763,
+    "type": "T1",
+    "layerNames": [
+      "hologram_rings",
+      "pilot"
+    ],
+    "preset": "slow-push",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S07",
+    "chapter": "C02",
+    "title": "心跳波形形成星轨",
+    "startSec": 31.795,
+    "endSec": 34.255,
+    "startFrame": 763,
+    "endFrame": 822,
+    "type": "T3+T4",
+    "layerNames": [
+      "pulse_ribbon",
+      "panel"
+    ],
+    "preset": "hold",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S08",
+    "chapter": "C02",
+    "title": "小行星带擦过舷窗",
+    "startSec": 34.255,
+    "endSec": 38.356,
+    "startFrame": 822,
+    "endFrame": 921,
+    "type": "T1+T4",
+    "layerNames": [
+      "asteroids_far",
+      "asteroids_near",
+      "window_frame"
+    ],
+    "preset": "hold",
+    "transition": "flash"
+  },
+  {
+    "id": "S09",
+    "chapter": "C03",
+    "title": "金光贯穿船舱",
+    "startSec": 38.356,
+    "endSec": 45.525,
+    "startFrame": 921,
+    "endFrame": 1093,
+    "type": "T2",
+    "layerNames": [
+      "shutters",
+      "gold_beam",
+      "pilot"
+    ],
+    "preset": "slow-push",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S10",
+    "chapter": "C03",
+    "title": "旋转的星云世界",
+    "startSec": 45.525,
+    "endSec": 50.995,
+    "startFrame": 1093,
+    "endFrame": 1224,
+    "type": "T4",
+    "layerNames": [
+      "rotating_nebula",
+      "window_frame",
+      "pilot"
+    ],
+    "preset": "slow-push",
+    "transition": "meteor-wipe"
+  },
+  {
+    "id": "S11",
+    "chapter": "C03",
+    "title": "星云中极小的舱窗",
+    "startSec": 50.995,
+    "endSec": 56.465,
+    "startFrame": 1224,
+    "endFrame": 1355,
+    "type": "T1",
+    "layerNames": [
+      "nebula",
+      "ship_window"
+    ],
+    "preset": "pull-out",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S12",
+    "chapter": "C03",
+    "title": "玻璃两侧的对位手掌",
+    "startSec": 56.465,
+    "endSec": 60.274,
+    "startFrame": 1355,
+    "endFrame": 1447,
+    "type": "T3",
+    "layerNames": [
+      "pilot_hand",
+      "glass",
+      "hologram_hand",
+      "frost"
+    ],
+    "preset": "slow-push",
+    "transition": "flash"
+  },
+  {
+    "id": "S13",
+    "chapter": "C04",
+    "title": "走向信号核心",
+    "startSec": 60.274,
+    "endSec": 65.885,
+    "startFrame": 1447,
+    "endFrame": 1581,
+    "type": "T5",
+    "layerNames": [
+      "pilot_pose_a",
+      "pilot_pose_b",
+      "core"
+    ],
+    "preset": "follow",
+    "transition": "action-cut"
+  },
+  {
+    "id": "S14",
+    "chapter": "C04",
+    "title": "船体碎片失重漂移",
+    "startSec": 65.885,
+    "endSec": 71.505,
+    "startFrame": 1581,
+    "endFrame": 1716,
+    "type": "T4",
+    "layerNames": [
+      "debris",
+      "pilot",
+      "alarm_light"
+    ],
+    "preset": "hold",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S15",
+    "chapter": "C04",
+    "title": "静止的碎片星群",
+    "startSec": 71.505,
+    "endSec": 76.925,
+    "startFrame": 1716,
+    "endFrame": 1846,
+    "type": "T2",
+    "layerNames": [
+      "debris_frozen",
+      "pilot"
+    ],
+    "preset": "slow-push",
+    "transition": "hard-cut"
+  },
+  {
+    "id": "S16",
+    "chapter": "C04",
+    "title": "脉搏成为双引力轨道",
+    "startSec": 76.925,
+    "endSec": 82.192,
+    "startFrame": 1846,
+    "endFrame": 1973,
+    "type": "T4",
+    "layerNames": [
+      "waveform",
+      "double_orbit"
+    ],
+    "preset": "slow-push",
+    "transition": "dust-wipe"
+  },
+  {
+    "id": "S17",
+    "chapter": "C05",
+    "title": "无法触碰的幻影拥抱",
+    "startSec": 82.192,
+    "endSec": 88.145,
+    "startFrame": 1973,
+    "endFrame": 2115,
+    "type": "T3",
+    "layerNames": [
+      "pilot",
+      "hologram_arm_front",
+      "hologram_arm_back"
+    ],
+    "preset": "slow-push",
+    "transition": "pull-out"
+  },
+  {
+    "id": "S18",
+    "chapter": "C05",
+    "title": "世界旋转人物直立",
+    "startSec": 88.145,
+    "endSec": 95.045,
+    "startFrame": 2115,
+    "endFrame": 2281,
+    "type": "T4",
+    "layerNames": [
+      "rotating_cabin",
+      "pilot",
+      "gold_ring"
+    ],
+    "preset": "hold",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S19",
+    "chapter": "C05",
+    "title": "掌心握住怀表光环",
+    "startSec": 95.045,
+    "endSec": 99.105,
+    "startFrame": 2281,
+    "endFrame": 2379,
+    "type": "T2",
+    "layerNames": [
+      "hand_open",
+      "hand_closed",
+      "gold_ring"
+    ],
+    "preset": "hand-push",
+    "transition": "glow-wipe"
+  },
+  {
+    "id": "S20",
+    "chapter": "C05",
+    "title": "冷舱被金光染亮",
+    "startSec": 99.105,
+    "endSec": 104.11,
+    "startFrame": 2379,
+    "endFrame": 2499,
+    "type": "T2",
+    "layerNames": [
+      "cold_plate",
+      "warm_wash"
+    ],
+    "preset": "hold",
+    "transition": "color-wipe"
+  },
+  {
+    "id": "S21",
+    "chapter": "C06",
+    "title": "远处飞船掠过巨型星云",
+    "startSec": 104.11,
+    "endSec": 108.105,
+    "startFrame": 2499,
+    "endFrame": 2595,
+    "type": "T1",
+    "layerNames": [
+      "nebula",
+      "ship"
+    ],
+    "preset": "follow",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S22",
+    "chapter": "C06",
+    "title": "暗宇宙里两点光互相靠近",
+    "startSec": 108.105,
+    "endSec": 110.625,
+    "startFrame": 2595,
+    "endFrame": 2655,
+    "type": "T1",
+    "layerNames": [
+      "light_a",
+      "light_b"
+    ],
+    "preset": "hold",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S23",
+    "chapter": "C06",
+    "title": "两条星轨受紫色引力牵扯",
+    "startSec": 110.625,
+    "endSec": 115.068,
+    "startFrame": 2655,
+    "endFrame": 2762,
+    "type": "T4",
+    "layerNames": [
+      "ribbons",
+      "purple_pull"
+    ],
+    "preset": "hold",
+    "transition": "color-wipe"
+  },
+  {
+    "id": "S24",
+    "chapter": "C07",
+    "title": "重回结霜全息星图",
+    "startSec": 115.068,
+    "endSec": 121.935,
+    "startFrame": 2762,
+    "endFrame": 2926,
+    "type": "T3",
+    "layerNames": [
+      "pilot",
+      "hologram",
+      "star_map",
+      "frost"
+    ],
+    "preset": "slow-push",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S25",
+    "chapter": "C07",
+    "title": "光幕两侧的指尖",
+    "startSec": 121.935,
+    "endSec": 127.375,
+    "startFrame": 2926,
+    "endFrame": 3057,
+    "type": "T3+T5",
+    "layerNames": [
+      "left_hand",
+      "right_hand",
+      "light_membrane",
+      "ripples"
+    ],
+    "preset": "slow-push",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S26",
+    "chapter": "C07",
+    "title": "光幕扫描断层",
+    "startSec": 127.375,
+    "endSec": 132.795,
+    "startFrame": 3057,
+    "endFrame": 3187,
+    "type": "T3+T4",
+    "layerNames": [
+      "helmet",
+      "glitch_strips"
+    ],
+    "preset": "hold",
+    "transition": "glitch-cut"
+  },
+  {
+    "id": "S27",
+    "chapter": "C07",
+    "title": "最后一帧对位不接触",
+    "startSec": 132.795,
+    "endSec": 134.247,
+    "startFrame": 3187,
+    "endFrame": 3222,
+    "type": "T3",
+    "layerNames": [
+      "left_hand",
+      "right_hand",
+      "barrier"
+    ],
+    "preset": "hold",
+    "transition": "flash"
+  },
+  {
+    "id": "S28",
+    "chapter": "C08",
+    "title": "失衡船舱向核心攀行",
+    "startSec": 134.247,
+    "endSec": 142.335,
+    "startFrame": 3222,
+    "endFrame": 3416,
+    "type": "T5",
+    "layerNames": [
+      "tilted_cabin",
+      "pilot_pose_a",
+      "pilot_pose_b",
+      "core"
+    ],
+    "preset": "tilt",
+    "transition": "action-cut"
+  },
+  {
+    "id": "S29",
+    "chapter": "C08",
+    "title": "紫金光浪中继续前进",
+    "startSec": 142.335,
+    "endSec": 147.845,
+    "startFrame": 3416,
+    "endFrame": 3548,
+    "type": "T5",
+    "layerNames": [
+      "pilot_pose_a",
+      "pilot_pose_b",
+      "gold_wash",
+      "purple_wash"
+    ],
+    "preset": "slow-push",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S30",
+    "chapter": "C08",
+    "title": "船壳剥离显露星海",
+    "startSec": 147.845,
+    "endSec": 153.215,
+    "startFrame": 3548,
+    "endFrame": 3677,
+    "type": "T4",
+    "layerNames": [
+      "hull_fragments",
+      "outer_space"
+    ],
+    "preset": "hold",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S31",
+    "chapter": "C08",
+    "title": "最后一次心跳收成圆环",
+    "startSec": 153.215,
+    "endSec": 156.164,
+    "startFrame": 3677,
+    "endFrame": 3748,
+    "type": "T2+T4",
+    "layerNames": [
+      "pulse",
+      "closed_orbit"
+    ],
+    "preset": "hold",
+    "transition": "flash"
+  },
+  {
+    "id": "S32",
+    "chapter": "C09",
+    "title": "倒置梦境与漂浮人物",
+    "startSec": 156.164,
+    "endSec": 166.44,
+    "startFrame": 3748,
+    "endFrame": 3995,
+    "type": "T1",
+    "layerNames": [
+      "inverted_room",
+      "pilot",
+      "watch_ring"
+    ],
+    "preset": "drift",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S33",
+    "chapter": "C09",
+    "title": "三条视觉母题汇合",
+    "startSec": 166.44,
+    "endSec": 171.695,
+    "startFrame": 3995,
+    "endFrame": 4121,
+    "type": "T4",
+    "layerNames": [
+      "gold_dust",
+      "double_orbit",
+      "glass_fragments"
+    ],
+    "preset": "hold",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S34",
+    "chapter": "C09",
+    "title": "碎玻璃汇成庇护光罩",
+    "startSec": 171.695,
+    "endSec": 178.082,
+    "startFrame": 4121,
+    "endFrame": 4274,
+    "type": "T2",
+    "layerNames": [
+      "glass_fragments",
+      "two_figures",
+      "light_dome"
+    ],
+    "preset": "slow-push",
+    "transition": "iris"
+  },
+  {
+    "id": "S35",
+    "chapter": "C10",
+    "title": "外壳完全化为星尘",
+    "startSec": 178.082,
+    "endSec": 185.935,
+    "startFrame": 4274,
+    "endFrame": 4462,
+    "type": "T5",
+    "layerNames": [
+      "ship_fragments",
+      "pilot",
+      "hologram",
+      "star_dust"
+    ],
+    "preset": "slow-push",
+    "transition": "action-cut"
+  },
+  {
+    "id": "S36",
+    "chapter": "C10",
+    "title": "金紫星轨组成银河光柱",
+    "startSec": 185.935,
+    "endSec": 191.445,
+    "startFrame": 4462,
+    "endFrame": 4595,
+    "type": "T4",
+    "layerNames": [
+      "two_figures",
+      "gold_orbit",
+      "purple_orbit",
+      "light_column"
+    ],
+    "preset": "pull-out",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S37",
+    "chapter": "C10",
+    "title": "两个身影第一次真正相拥",
+    "startSec": 191.445,
+    "endSec": 196.795,
+    "startFrame": 4595,
+    "endFrame": 4723,
+    "type": "T5",
+    "layerNames": [
+      "pose_apart",
+      "pose_near",
+      "pose_touch",
+      "pose_embrace",
+      "crystals"
+    ],
+    "preset": "slow-push",
+    "transition": "eye-match-cut"
+  },
+  {
+    "id": "S38",
+    "chapter": "C10",
+    "title": "瞳孔里的重逢与星辰",
+    "startSec": 196.795,
+    "endSec": 202.725,
+    "startFrame": 4723,
+    "endFrame": 4865,
+    "type": "T2",
+    "layerNames": [
+      "eye",
+      "reflection",
+      "collapsing_stars"
+    ],
+    "preset": "eye-push",
+    "transition": "circle-match"
+  },
+  {
+    "id": "S39",
+    "chapter": "C10",
+    "title": "收束的银河光柱与微小人物",
+    "startSec": 202.725,
+    "endSec": 208.219,
+    "startFrame": 4865,
+    "endFrame": 4997,
+    "type": "T1",
+    "layerNames": [
+      "galaxy",
+      "light_column",
+      "two_figures"
+    ],
+    "preset": "pull-out",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S40",
+    "chapter": "C10",
+    "title": "星河向内坍缩成光针",
+    "startSec": 208.219,
+    "endSec": 213.475,
+    "startFrame": 4997,
+    "endFrame": 5123,
+    "type": "T4",
+    "layerNames": [
+      "star_particles",
+      "light_needle"
+    ],
+    "preset": "hold",
+    "transition": "white-wipe"
+  },
+  {
+    "id": "S41",
+    "chapter": "C10",
+    "title": "两颗相依的光体",
+    "startSec": 213.475,
+    "endSec": 219.178,
+    "startFrame": 5123,
+    "endFrame": 5260,
+    "type": "T1+T2",
+    "layerNames": [
+      "light_orb_a",
+      "light_orb_b"
+    ],
+    "preset": "pull-out",
+    "transition": "dissolve"
+  },
+  {
+    "id": "S42",
+    "chapter": "C11",
+    "title": "星海深处两束余光",
+    "startSec": 219.178,
+    "endSec": 224.195,
+    "startFrame": 5260,
+    "endFrame": 5381,
+    "type": "T1",
+    "layerNames": [
+      "light_orb_a",
+      "light_orb_b",
+      "trail"
+    ],
+    "preset": "pull-out",
+    "transition": "match-cut"
+  },
+  {
+    "id": "S43",
+    "chapter": "C11",
+    "title": "最后一道尾迹消失",
+    "startSec": 224.195,
+    "endSec": 227.375,
+    "startFrame": 5381,
+    "endFrame": 5457,
+    "type": "T2",
+    "layerNames": [
+      "trail"
+    ],
+    "preset": "hold",
+    "transition": "fade-to-night"
+  }
+]

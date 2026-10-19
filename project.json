@@ -1,0 +1,18 @@
+{
+  "id": "guangnian-mv",
+  "name": "光年之外 · 电影级动态插画",
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "durationSec": 227.375,
+  "totalFrames": 5457,
+  "background": "#0A1422",
+  "subtitleSafeArea": {
+    "top": 975,
+    "bottom": 1070
+  },
+  "audio": {
+    "path": "assets/audio/clip.m4a",
+    "note": "用户自行放置具备使用许可的音频；该文件不随工程分发"
+  }
+}
