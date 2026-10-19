@@ -1,0 +1,41 @@
+用途：Hero：S35 碎裂成星尘（最终释放，通往 S37）
+建议模型：图像模型（Midjourney / Flux / Imagen / Nano Banana / 即梦）
+存为：mv/assets/refs/hero_s35.png
+
+〔画面信息〕
+178.082–185.935 · 大远景 · 金紫 × 极光奶油白 · 失重几何碎裂 · 视觉重心 (960, 510)
+
+〔PROMPT（复制这一段，已含风格/构图/禁项）〕
+An epic yet deeply poetic cinematic 2D watercolor animation keyframe for G.E.M.'s "Light Years Away", 1920x1080, 16:9.
+
+The final barrier shatters in a vast cosmic ocean.
+
+The outer shell of a lonely ring-shaped generation spaceship and its last translucent protective dome have just dissolved into thousands of beautiful weightless geometric crystal fragments and luminous golden stardust.
+
+There is no explosion of fire, no violent debris, no destruction horror. Instead, it looks as if an enormous watercolor painting of a spaceship has gently broken apart into transparent, floating pieces of illuminated paper and stars.
+
+At the center, two small human-like silhouettes drift toward each other through the suddenly unobstructed cosmos.
+
+On the left, the female navigator in her recognizable simple spacesuit and dome helmet, rendered mostly as a deep-indigo silhouette with delicate golden edge lighting. On the right, her companion, a semi-transparent cyan figure beginning to transform into warm golden stardust.
+
+Their bodies are moving toward each other, arms extending, but they have not yet embraced. A meaningful distance remains between them. The emotional climax of physical contact belongs to a later shot.
+
+Composition: monumental wide shot, centered on (960,510). The two figures float in the central upper-middle space, framed by expanding rings of luminous translucent crystal fragments. The dissolving circular spaceship architecture echoes the earlier pocket watch and orbital motifs. The surrounding universe is immense and dark, creating strong contrast with the radiant opening.
+
+Lighting: a powerful but soft cream-gold backlight from behind the two figures, warm stardust throughout the central ring, violet nebula shadows along the periphery, delicate cyan light still outlining the companion. Highest luminous intensity of the sequence so far, but preserving textured shadows and painterly detail.
+
+Palette: #0A1422, #A45CC0, #E8A33D, #EDE7DA, #7FD8D8.
+
+Traditional hand-painted wet-on-wet watercolor on fine cold-press paper. Dramatic transparent washes, luminous golden pigment bleeding into deep indigo, extremely delicate ink outlines, floating translucent watercolor-paper fragments, layered stardust, organic uneven pigment edges.
+
+A majestic, emotional and tender cosmic release. Visually achievable using flat 2D masked shapes, fixed fragment paths, nested watercolor washes and layered glows, never physical 3D simulation.
+
+Keep all central narrative content above y=960. Preserve y=975–1070 as a dark, visually calm karaoke subtitle region.
+
+No text, no pure black or pure white, no fireballs, no weapons, no metal wreckage chaos, no monsters, no photorealistic faces, no 3D rendering, no cyberpunk, no gore, no violent explosion, no already completed embrace.
+
+〔MIDJOURNEY 追加参数（仅 Midjourney 用）〕
+--ar 16:9 --style raw --s 250 --no text, watermark, photorealistic, 3D, CGI, pure black, pure white, modern city, mecha, deformed face
+
+〔验收重点〕
+S35 要让人感受到“阻隔终于消失”，而不仅仅是“飞船爆炸”。所有碎片必须轻盈、透明、有水彩纸片的边缘感。人物尚未相拥，保留 S37 的情绪释放。

@@ -1,0 +1,15 @@
+用途：把 refs 交给 OpenCode 做"参考对齐"
+使用方式：在 OpenCode 会话里整段粘贴（确认 refs 已放好）
+
+──────────────── PROMPT ────────────────
+assets/refs/ 下是新的一批参考图（style frames、pilot 三视图、hero keyframes）。
+请按以下顺序做"参考对齐"，每轮只动一个维度：
+1) 先从 ref_verse.png / ref_chorus.png / ref_outro.png 提取 HEX，更新 PIL.PAL 的色值
+2) 再按 pilot_turnaround.png 修正 pilot.js 的比例 / 头盔 / 面罩反光 / 发丝
+3) 再对齐主光方向与 glow 层次
+4) 最后加笔触纹理和纸纹（可直接把 refs 当贴图叠加）
+
+约束不变：帧=时间纯函数、禁 Math.random、禁 3D、禁纯黑白、只用 paint/inkLine、
+主体 y<960、字幕带 y975–1070 保持干净。
+每轮用 render.mjs --sheet 出检查图，和 refs 并排对比后再继续；一次只改一个维度。
+─────────────────────────────────────

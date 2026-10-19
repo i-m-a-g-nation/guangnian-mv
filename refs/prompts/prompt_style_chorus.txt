@@ -1,0 +1,15 @@
+用途：副歌风格锚（金紫对撞）
+建议模型：图像模型
+存为：mv/assets/refs/ref_chorus.png
+
+〔PROMPT（复制这一段，主体+风格已拼好）〕
+silhouetted astronaut standing before a floor-to-ceiling window as a golden supernova and magenta nebula storm #E8A33D #A45CC0 flood the dark cabin #0A1422, extreme scale contrast between tiny human and vast cosmos, backlit black silhouette, streaming star rain, hand-painted watercolor animation still, wet-on-wet pigment blooms, cold-press paper grain, gentle bleeding edges, fine ink linework over washes, muted luminous palette, cinematic lighting, film still, 16:9 composition, 1920x1080, keep the bottom 12% calm and detail-free, no text
+
+〔NEGATIVE（Flux / 即梦 / 可灵 等填到负向框）〕
+photorealistic, 3D render, CGI, plastic, vector flat, hard digital edges, pure black, pure white, neon cyberpunk, modern city, street, cafe, classroom, phone screen, mecha, monster, gore, blood, dirty ruins, clutter, text, watermark, logo, signature, deformed face, distorted hands, extra fingers
+
+〔MIDJOURNEY 追加参数（仅 Midjourney 用）〕
+--ar 16:9 --style raw --s 250 --no text, watermark, photorealistic, 3D, CGI, pure black, pure white, modern city, mecha, deformed face
+
+〔备注〕
+这张决定副歌的'爽感'；如果太亮就把纯白/纯黑从负向词里加强，保证画面靠 #E8A33D/#A45CC0 撑起来。

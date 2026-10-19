@@ -1,0 +1,6 @@
+_archive/
+node_modules/
+out/
+*.m4a
+*.mp4
+*.wav
