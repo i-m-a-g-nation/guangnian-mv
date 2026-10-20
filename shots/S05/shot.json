@@ -20,6 +20,20 @@
       "parallax": 1
     },
     {
+      "id": "plate_with_frost",
+      "src": "shots/S05/plate_with_frost.png",
+      "required": true,
+      "fit": "cover",
+      "blend": "source-over",
+      "parallax": 1,
+      "opacityKeys": [
+        { "t": 0.00, "value": 0.00 },
+        { "t": 0.12, "value": 0.00 },
+        { "t": 0.85, "value": 1.00 },
+        { "t": 1.00, "value": 1.00 }
+      ]
+    },
+    {
       "id": "planet_lit",
       "src": "shots/S05/layers/planet_lit.png",
       "required": true,
@@ -34,17 +48,22 @@
       "opacity": 1
     },
     {
-      "id": "frost_full",
-      "src": "shots/S05/layers/frost_full.png",
+      "id": "planet_dark",
+      "src": "shots/S05/layers/planet_dark.png",
       "required": true,
       "fit": "cover",
       "blend": "source-over",
       "parallax": 1,
+      "motion": {
+        "from": { "x": 12, "y": 0 },
+        "to":   { "x": -8, "y": 3 },
+        "ease": "smootherstep"
+      },
       "opacityKeys": [
-        { "t": 0.00, "value": 0.00 },
-        { "t": 0.20, "value": 0.00 },
-        { "t": 0.70, "value": 0.88 },
-        { "t": 1.00, "value": 1.00 }
+        { "t": 0.0, "value": 0.0 },
+        { "t": 0.34, "value": 0.0 },
+        { "t": 0.72, "value": 0.5 },
+        { "t": 1.0, "value": 0.88 }
       ]
     }
   ],
@@ -54,5 +73,5 @@
     "safeYMax": 1070,
     "renderInsideShot": false
   },
-  "notes": "S05 v2 最简版：clean plate + moving planet + full frost fade-in."
+  "notes": "S05 v3b: frost reveal by crossfading the clean plate to the ChatGPT-generated frost scene (frost is correctly behind the astronaut, visor stays clear), then lit->dark planet. Whole-scene crossfade instead of per-stage frost masks."
 }
