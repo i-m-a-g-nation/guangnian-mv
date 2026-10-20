@@ -38,7 +38,7 @@
       "src": "shots/S05/layers/frost_full.png",
       "required": true,
       "fit": "cover",
-      "blend": "screen",
+      "blend": "source-over",
       "parallax": 1,
       "opacityKeys": [
         { "t": 0.00, "value": 0.00 },
